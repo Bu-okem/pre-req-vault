@@ -9,7 +9,7 @@ pub use constants::*;
 pub use instructions::*;
 pub use state::*;
 
-declare_id!("DBoobRVqT7PaAhq8obqo95723CHyWvcCLRUKvQ5wYWE4");
+declare_id!("4f318JBXNSPkNQMow6CgKZzSeWWsCKhLcAoXjpQzxhtH");
 
 #[program]
 pub mod pre_req_vault {
@@ -17,7 +17,7 @@ pub mod pre_req_vault {
 
     // Initialize
     pub fn initialize(ctx: Context<Initialize>) -> Result<()> {
-        ctx.accounts.intialize(&ctx.bumps)
+        ctx.accounts.initialize(&ctx.bumps)
     }
 
     // deposit funds
